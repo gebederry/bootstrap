@@ -494,6 +494,8 @@ fieldset {
 // 2. Fix wrapping bug.
 //    See https://github.com/twbs/bootstrap/issues/29712
 
+//! Removed Fix 2
+
 legend {
   float: left; // 1
   width: 100%;
@@ -502,10 +504,6 @@ legend {
   font-weight: $legend-font-weight;
   line-height: inherit;
   @include font-size($legend-font-size);
-
-  + * {
-    clear: left; // 2
-  }
 }
 
 // Fix height of inputs with a type of datetime-local, date, month, week, or time
